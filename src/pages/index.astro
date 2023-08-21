@@ -53,6 +53,7 @@ const last_posts = posts.slice(0, 3);
     desc="A project starting soon with physical hardware, in which I\'ll get to setup a fully-functional NAS device and learn how to manage a network server."
     url="/blog"
     badge="COMING SOON"
+    target="_self"
   />
 
   <div>
@@ -60,25 +61,18 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   {
-    last_posts.length === 0 ? (
-      <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
-        <p class="font-bold">Sorry!</p>
-        <p>There are no blog posts to show at the moment. Check back later!</p>
-      </div>
-    ) : (
-      last_posts.map((post) => (
-        <>
-          <HorizontalCard
-            title={post.data.title}
-            img={post.data.heroImage}
-            desc={post.data.description}
-            url={"/blog/" + post.slug}
-            target="_self"
-            badge={post.data.badge}
-          />
-          <div class="divider my-0" />
-        </>
-      ))
-    )
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
   }
 </BaseLayout>
