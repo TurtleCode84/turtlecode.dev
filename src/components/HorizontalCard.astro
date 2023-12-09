@@ -1,6 +1,7 @@
 ---
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
+const cardImage = await import(`../../public/${img}.png`);
 ---
 
 <div
@@ -11,7 +12,7 @@ import { Image } from "astro:assets";
       {
         img && (
           <Image
-            src={img}
+            src={cardImage}
             aspectRatio="16:9"
             width={750}
             format="webp"

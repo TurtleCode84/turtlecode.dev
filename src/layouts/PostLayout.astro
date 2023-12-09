@@ -11,6 +11,7 @@ const { title, description, pubDate, updatedDate, heroImage, badge } =
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll");
 import { Image } from "astro:assets";
+const cardImage = await import(`../../public/${heroImage}.png`);
 ---
 
 <BaseLayout title={title + ' // TurtleCode'} description={description} image={heroImage}>
@@ -23,7 +24,7 @@ import { Image } from "astro:assets";
             width={750}
             height={422}
             format="webp"
-            src={heroImage}
+            src={cardImage}
             alt={title}
             class="w-full mb-6"
           />
