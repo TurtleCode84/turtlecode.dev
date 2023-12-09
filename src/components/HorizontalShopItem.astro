@@ -13,7 +13,7 @@ const {
   custom_link_label = "",
 } = Astro.props;
 import { Image } from "astro:assets";
-const cardImage = await import(`../../public/${img}.png`);
+const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
 ---
 
 <div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
@@ -25,7 +25,7 @@ const cardImage = await import(`../../public/${img}.png`);
             aspectRatio="16:9"
             width={750}
             format="webp"
-            src={cardImage}
+            src={images[img]()}
             alt={title}
             class="max-w-full md:max-w-[13rem] rounded-lg"
           />
