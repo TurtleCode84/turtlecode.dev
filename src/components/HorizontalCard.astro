@@ -12,7 +12,7 @@ const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
       {
         img && (
           <Image
-            src={images}
+            src={images[img]}
             aspectRatio="16:9"
             width={750}
             format="webp"
