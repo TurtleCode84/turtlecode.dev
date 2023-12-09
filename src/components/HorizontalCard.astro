@@ -3,7 +3,6 @@ const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
 const images = import.meta.glob('./../assets/*.{jpeg,jpg,png,gif}')
 const imagePath = images[img];
-const imageImport = imagePath();
 ---
 
 <div
@@ -14,7 +13,7 @@ const imageImport = imagePath();
       {
         img && (
           <Image
-            src={imageImport}
+            src={imagePath}
             aspectRatio="16:9"
             width={750}
             format="webp"
