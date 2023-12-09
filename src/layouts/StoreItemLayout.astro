@@ -22,7 +22,7 @@ const {
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(updatedDate).format("ll");
 import { Image } from "astro:assets";
-const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
+const images = import.meta.glob('./../assets/*.{jpeg,jpg,png,gif}')
 ---
 
 <BaseLayout title={title + ' // TurtleCode'} description={description} image={heroImage}>

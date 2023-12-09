@@ -1,7 +1,7 @@
 ---
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
-const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
+const images = import.meta.glob('./../assets/*.{jpeg,jpg,png,gif}')
 ---
 
 <div
