@@ -2,7 +2,7 @@
 title: "Welcome to my Portfolio!"
 description: "Thanks for stopping by, I finally got around to making my website look nice so I can display and write about my projects."
 pubDate: "Aug 20 2023"
-heroImage: "/post_img.webp"
+heroImage: "/src/assets/post_img.webp"
 #badge: "Demo badge"
 ---
 
