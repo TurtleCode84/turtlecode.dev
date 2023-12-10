@@ -1,7 +1,7 @@
 ---
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
-const images = import.meta.glob('./../assets/*.{jpeg,jpg,png,gif,webp}')
+const images = import.meta.glob('./assets/*.{jpeg,jpg,png,gif,webp}')
 ---
 
 <div
@@ -12,7 +12,7 @@ const images = import.meta.glob('./../assets/*.{jpeg,jpg,png,gif,webp}')
       {
         img && (
           <Image
-            src={images['./assets' + img]}
+            src={images['./assets/post_img.webp']()}
             aspectRatio="16:9"
             width={750}
             format="webp"
