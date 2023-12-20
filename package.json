@@ -15,7 +15,7 @@
     "@astrojs/mdx": "^2.0.1",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.3",
+    "@astrojs/tailwind": "^5.0.4",
     "astro": "^4.0.5",
     "daisyui": "^4.4.20",
     "dayjs": "^1.11.10",
