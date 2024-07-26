@@ -3,7 +3,7 @@ title: "Webserver Networking Project"
 description: "I created a networked server setup using physical hardware to deploy a website showcasing student projects. I got to set up multiple computing devices, and learned how to manage a secure server environment to publish a full-stack web application."
 pubDate: "Feb 09 2024"
 heroImage: "/src/assets/webserver.png"
-badge: "NEW"
+#badge: ""
 ---
 
 ### "Inspiration through Recognition"
