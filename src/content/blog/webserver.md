@@ -33,4 +33,4 @@ I've chosen to keep the project code closed-source and the public URL private fo
 ***Thanks for reading!***
 <br>***~ Turtle***
 
-[^1]: This was before the current *turtlecode.tech* existed!
+[^1]: This was before the current *turtlecode.dev* existed!
