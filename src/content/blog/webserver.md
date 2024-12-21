@@ -6,7 +6,7 @@ heroImage: "/src/assets/webserver.png"
 #badge: ""
 ---
 
-### "Inspiration through Recognition"
+### "Featuring the Past, for the Future"
 For over seven years, I've been working on projects that have challenged my ability to design, code, and implement server applications. These started out very small, but gradually grew in size and complexity as I explored the work of more experienced developers. In this way, I taught myself a majority of what I know about coding, and I still believe that example is one of the best methods of teaching and inspiring.
 That is the core mission behind this website; new creativity fueled by the revelations of others.
 
